@@ -1,0 +1,35 @@
+.wrapper-item {
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.wrapper-item.active {
+    color:#D7E2F2;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px 8px 12px;
+    border-left: 2px solid #606580;
+    background-color: #272A38;
+    margin-bottom: 10px;
+}
+.item__left-block {
+    display: flex;
+    align-items: center;
+}
+.item__left-block img {
+    margin-right: 10px;
+}
+.item__left-block__raw-material {
+    margin-left: 6px;
+}
+.item__right-block {
+}
+.item__right-block__deviations {
+}
+.inner-items {
+    padding-left: 20px;
+}

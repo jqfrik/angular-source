@@ -1,0 +1,10 @@
+<div class="inner-item" (click)='onClickItem()'  [ngClass]="{'yellow':warning? true:false,'blue':clicked?true:false}">
+    <div class="inner-item__left-block">
+        <div class="inner-item__left-block__title">{{title}}</div>
+        <div class="inner-item__left-block__measure">{{unit}}</div>
+    </div>
+    <div class="inner-item__right-block">
+        <div class="inner-item__right-block__index1">{{index1}}</div>
+        <div class="inner-item__right-block__index2">{{index2}}</div>
+    </div>
+</div>

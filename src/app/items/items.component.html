@@ -1,0 +1,5 @@
+<div class="items">
+    <div class="background-before"></div>
+    <app-wrapper-item *ngFor='let item of data' [material]='item.material' [deviations]='item.deviations'
+        [innerItems]='item.children' [active]='item.active'></app-wrapper-item>
+</div>

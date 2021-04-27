@@ -1,0 +1,20 @@
+<div class="wrapper-item">
+    <div class="item" (click)='onToggleShowItems()'>
+        <div class="item__left-block">
+            <app-table-chart-svg-icon-open [active]='active' [innerItems]='innerItems'></app-table-chart-svg-icon-open>
+            <div class="item__left-block__raw-material"
+                [ngStyle]="{'color':active && innerItems.length !== 0?'#fff':'#8C99B2'}">
+                {{material}}
+            </div>
+        </div>
+        <div class="item__right-block">
+            <div class="item__right-block__deviations">
+                Отклонений: {{deviations}}
+            </div>
+        </div>
+    </div>
+    <div class="inner-items" [ngStyle]="{'display':active ? '':'none'}">
+        <app-inner-item *ngFor='let item of innerItems' [title]='item.title' [unit]='item.unit' [index1]='item.index1'
+            [index2]='item.index2' [warning]='item.warning'></app-inner-item>
+    </div>
+</div>

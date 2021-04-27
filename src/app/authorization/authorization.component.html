@@ -1,0 +1,50 @@
+<div class="wrapper">
+    <div class="authorization">
+        <div class="title-block">
+            <img class="title-block__icon" src="../assets/Gazprom-icon.svg" alt="Газпром нефть">
+            <div class="title-block__vertical-pipe"></div>
+            <div class="title-block__text">
+                <div class="title-block__text__top">Цифровая</div>
+                <div class="title-block__text__bottom">индустриальная экосистема</div>
+            </div>
+        </div>
+        <form [formGroup]='authForm' (ngSubmit)="onSubmit()">
+            <div class="input-block">
+                <div class="input-block__wrapper1">
+                    <input class="btn input-block__login" formControlName='login' type="text" placeholder="Логин"
+                        required>
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.03101 7.03125C7.03101 3.98437 9.45288 1.5625 12.4998 1.5625C15.5466 1.5625 17.9685 3.98437 17.9685 7.03125C17.9685 10.0781 15.5466 14.6875 12.4998 14.6875C9.45288 14.6875 7.03101 10.0781 7.03101 7.03125Z"
+                            stroke="#8C99B2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M15.859 13.0469C19.8434 14.2969 22.8121 17.8125 23.359 22.0313C23.4371 22.8125 22.8902 23.4375 22.109 23.4375H2.89024C2.10899 23.4375 1.56211 22.7344 1.64023 22.0313C2.18711 17.8906 5.07773 14.4531 8.90586 13.125"
+                            stroke="#8C99B2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="input-block__wrapper2">
+                    <input class="btn input-block__password" formControlName='password'
+                        [type]="showPassword?'type':'password'" placeholder="Пароль" required>
+                    <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.3501 8.48739V7.0084C3.3501 3.68067 6.03077 1 9.3585 1H9.63581C12.9635 1 15.6442 3.68067 15.6442 7.0084V8.48739"
+                            stroke="#8C99B2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M9.49864 17.7312C10.5197 17.7312 11.3474 16.9035 11.3474 15.8824C11.3474 14.8614 10.5197 14.0337 9.49864 14.0337C8.47761 14.0337 7.6499 14.8614 7.6499 15.8824C7.6499 16.9035 8.47761 17.7312 9.49864 17.7312Z"
+                            stroke="#8C99B2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M9.49854 17.916V19.7648" stroke="#8C99B2" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <rect x="1" y="11" width="17" height="12" rx="2" stroke="#8C99B2" stroke-width="1.5" />
+                    </svg>
+                    <app-svg-check-password (showPasswordIconOutput)="onToggleShowPassword()">
+                    </app-svg-check-password>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-authorize" [disabled]="!authForm.valid">Войти</button>
+        </form>
+    </div>
+</div>

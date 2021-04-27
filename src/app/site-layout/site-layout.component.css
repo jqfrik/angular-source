@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #272A38;
+}
+.buttons {
+    padding: 10px 12px 10px;
+}
+.btn {
+    padding: 11px 40px 14px;
+    font-size: 14px;
+    background-color:#303549;
+    color: #D7E2F2;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+.btn.active {
+    background-color: #0089FF;
+    color: #fff;
+}
+.first-task {
+    margin-right: 9px;
+}
+.exit-icon {
+    padding: 18px 17px 13px 14px;
+    border-left: 1px solid #1B1E27;
+}
+.btn:hover {
+    background-color: #0089FF;
+    color: #fff;
+}
+.circle-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}

@@ -1,0 +1,6 @@
+svg {
+    transform: rotate(-45deg);
+}
+.open {
+    margin-left: -3px;
+}

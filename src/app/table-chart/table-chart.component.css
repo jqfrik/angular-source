@@ -1,0 +1,45 @@
+.global-widget {
+    height:530px;
+    color: #8C99B2;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: Tahoma;
+}
+.indicators {
+    padding: 8px 15px 8px;
+    background-color: #272A38;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.indicators img {
+    cursor:pointer;
+}
+.indicators__left-block {
+    margin-right: 267px;
+    display: flex;
+    align-items: center ;
+}
+.indicators__left-block img {
+    margin-right: 16px;
+}
+.indicators__left-block__text {
+    color: #D7E2F2;
+}
+.parameters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 20px 13px;
+    background-color: #1C1F2B;
+}
+.parameters__text1 {
+}
+.parameters__right-block {
+    display: flex;
+}
+.parameters__text2 {
+    margin-right:45px;
+}
+.parameters__text3 {
+}
